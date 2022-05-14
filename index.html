@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+
+    <!--     Tittle -->
+    <h1>CoderHouse</h1>
+
+    <!--     Navbar -->
+    <nav>
+      <a class="navbar" href="">Home</a>
+      <a class="navbar" href="">Shop</a>
+      <a class="navbar" href="">Contact</a>
+      <div class="button">
+        <input type="submit" id="button-background-color" value="Background-Color">
+      </div>
+      <div class="button">
+        <input type="submit" id="button-usuario" value="Usuario">
+      </div>
+      </div>
+    </nav>
+  </header>
+  <hr color="pink">
+  <!-- End navbar -->
+
+  <main>
+    <br>
+
+    <!-- Welcome -->
+    <div id="container_welcome">
+      <p id="pWelcome">Welcome!</p>
+    </div>
+    <!-- End welcome     -->
+    <br>
+
+    <!-- Principal container cards -->
+    <div id="container_principal">
+      <div id="cards_container">
+      </div>
+      <!-- Ends principal container cards -->
+
+      <!-- Carrito container -->
+      <div id="carrito_container">
+        <p id="p_container">Productos agregados al Carrito</p>
+        <ul id="ul_carrito"></ul>
+        <div id="container_price">
+          <div id="container_button_price_total">
+            <p id="total_container">$0</p>
+          </div>
+        </div>
+      </div>
+      <!-- Ends carrito container -->
+
+      <br>
+      <br>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+      <script src="app.js"></script>
+</body>
+
+</html>

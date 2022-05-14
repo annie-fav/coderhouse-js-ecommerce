@@ -1,0 +1,190 @@
+body {
+  background-color: black;
+  color: pink;
+  margin-top: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+  font-family: "Ramaraja", serif;
+  font-family: "Spectral", serif;
+}
+
+header {
+  display: flex;
+}
+
+h1 {
+  margin-left: 14%;
+  font-style: italic;
+  font-size: 35px;
+}
+
+nav {
+  display: flex;
+  height: 30px;
+  margin-left: 30%;
+}
+
+.navbar {
+  display: flex;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-top: 45px;
+  margin-left: 5%;
+  font-size: 18px;
+  color: purple;
+  font-family: "Ramaraja", serif;
+  font-family: "Spectral", serif;
+}
+
+.button {
+  display: inline-flex;
+}
+
+#button-background-color {
+  width: 150px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-family: "Ramaraja", serif;
+  font-family: "Spectral", serif;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-top: 45px;
+  margin-left: 40%;
+}
+
+#button-usuario {
+  width: 150px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-family: "Ramaraja", serif;
+  font-family: "Spectral", serif;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-top: 45px;
+  margin-left: 60%;
+}
+
+#pWelcome {
+  font-size: 40px;
+  margin-left: 900px;
+  font-weight: bold;
+}
+
+#button-empezar {
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-family: "Ramaraja", serif;
+  font-family: "Spectral", serif;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-top: 14px;
+  margin-left: 1240px;
+  margin-bottom: 14px;
+}
+
+#container_principal {
+  display: inline-flex;
+  margin-left: 10px;
+}
+
+#carrito_container {
+  margin-left: 10px;
+  margin-top: 40px;
+  width: 440px;
+  border-style: double;
+  border-color: pink;
+}
+
+#p_container {
+  text-align: center;
+  font-size: 22px;
+  text-decoration: underline;
+  margin-left: 14px;
+  width: 330px;
+  color: purple;
+}
+
+#cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*   border-style: double; */
+  /*   border-color: pink; */
+  with: 70%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.card {
+  border-style: double;
+  border-color: pink;
+  width: 240px;
+  height: 350px;
+  margin-left: 4%;
+  margin-top: 4%;
+  margin-right: 4%;
+}
+
+.card-img {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 240px;
+  border-radius: 120px;
+  margin-left: 30px;
+  margin-top: 8px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 15px;
+  color: purple;
+  margin-left: 4px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  color: purple;
+  margin-left: 4px;
+}
+
+.add-cart {
+  width: 100%;
+  background-color: white;
+  border-style: double;
+  color: purple;
+  text-align: center;
+}
+
+#carrito_container {
+  margin-left: 10px;
+}
+
+li {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+#total_container {
+  margin-left: 90px;
+  padding: 10px;
+  border-style: double;
+  color: violet;
+  text-align: center;
+  width: 120px;
+  height: 24px;
+}
+
+#button_delete {
+  display: inline-flex;
+  width: 14px;
+  height: 14px;
+}
