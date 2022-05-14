@@ -33,9 +33,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   await fetchData();
   // Checks local storage if the user has a CARRITO in the localstorage
   if (localStorage.getItem("CARRITO")) {
-    CARRITO = JSON.parse(localStorage.getItem("CARRITO"))
+    const LS_CARRITO = JSON.parse(localStorage.getItem("CARRITO"))
 
-    CARRITO.forEach(carrito_item => {
+    LS_CARRITO.forEach(carrito_item => {
+      CARRITO.push(carrito_item)
       const product_ = ARRAY_PRODUCTOS.find(p => p.id === carrito_item.id)
       updateCarritoItem(product_, carrito_item)
     })
@@ -138,13 +139,14 @@ function createProductCard(product) {
     const item = exists ? CARRITO[index_] : { id: product.id, amount: 0 };
 
     item.amount++;
-    localStorage.setItem(product.id, JSON.stringify(item));
 
     if (exists) {
       CARRITO[index_] = item;
     } else {
       CARRITO.push(item);
     }
+
+    localStorage.setItem('CARRITO', JSON.stringify(CARRITO));
 
     console.log("CARRITO updated started -------------");
     console.log(CARRITO);
@@ -200,7 +202,7 @@ function create_carrito_item(product, item, msg) {
     li.remove();
     const index_ = CARRITO.findIndex((x) => x.id === product.id);
     CARRITO.splice(index_, 1);
-    localStorage.removeItem(product.id);
+    localStorage.setItem("CARRITO", CARRITO);
     update_total_component()
     Toastify({
       text: `${product.name} has been removed correctly`,
